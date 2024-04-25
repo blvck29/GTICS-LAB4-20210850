@@ -31,8 +31,6 @@ public class Employees {
     private Job job;
     @Column(name = "salary")
     private float salary;
-    @Column(name = "commission_pct")
-    private float commissionPct;
     @ManyToOne
     @JoinColumn(name = "manager_id")
     private Employees manager;
