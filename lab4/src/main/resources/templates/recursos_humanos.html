@@ -14,15 +14,17 @@
 
 <div>
 
-    <div class="container" style="padding-top: 40px;">
-        <h2>Recursos Humanos - GTICS</h2>
+    <div class="container" style="padding-top: 40px; display: flex; flex-direction: row; justify-content: space-around; align-items: center">
+
+        <div style=" display:flex; align-items: center;">
+            <h2 style="padding-bottom: 0; margin-bottom: 0;">Recursos Humanos - GTICS</h2>
+        </div>
 
         <div style="display: flex; flex-direction: row; gap: 30px; padding-top: 20px;">
             <a th:href="@{/recursos_humanos/empleados}"><button class="btn btn-success">Empleados</button></a>
             <a th:href="@{/recursos_humanos/historial}"><button class="btn btn-success">Historial</button></a>
             <a th:href="@{/recursos_humanos/reportes}"><button class="btn btn-success">Reportes</button></a>
         </div>
-
     </div>
 
 </div>

@@ -11,4 +11,8 @@ public class LabController {
         return "recursos_humanos";
     }
 
+    @GetMapping(value = "/recursos_humanos/reportes")
+    public String reportes(){
+        return "reportes";
+    }
 }
