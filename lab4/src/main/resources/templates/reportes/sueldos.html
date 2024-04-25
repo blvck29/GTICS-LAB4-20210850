@@ -50,9 +50,9 @@
 
             <td th:text="${puesto.getMinSalary()}"></td>
 
-            <td th:text="${salaryTotal.get(IterIndex.index)}"></td>
+            <td th:text="${salaryTotal.get(IterIndex.index)}+ '0'"></td>
 
-            <td th:text="${meanSalary.get(IterIndex.index)}"></td>
+            <td th:text="${meanSalary.get(IterIndex.index)}+ '0'"></td>
 
             <td>
                 <a href="#"><button type="button"  class="btn btn-primary">

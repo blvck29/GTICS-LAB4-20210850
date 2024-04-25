@@ -55,7 +55,13 @@ public class LabController {
             }
 
             salaryTotal.add(String.valueOf(counterSalaryTotal));
-            meanSalary.add(String.valueOf(counterSalaryTotal/cantidadEmpleados));
+
+            if (counterSalaryTotal != 0) {
+                meanSalary.add(String.valueOf(counterSalaryTotal/cantidadEmpleados));
+            } else {
+                meanSalary.add("0.00");
+            }
+
         }
 
         model.addAttribute("listaJobs", listaJobs);
